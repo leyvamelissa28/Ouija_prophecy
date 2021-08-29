@@ -7,12 +7,12 @@ PFont font3;
 
 
 //Flames
-PImage flame1;
-PImage flame2;
-PImage flame3;
-PImage flame4;
-PImage flame5;
-PImage flame6;
+//PImage flame1;
+//PImage flame2;
+//PImage flame3;
+//PImage flame4;
+//PImage flame5;
+//PImage flame6;
 
 //text stings
 String a = "Please: Yes or No questions only";
@@ -46,12 +46,12 @@ void setup(){
  img2 = loadImage("candle1.png");
  
  //Flames
- flame1 = loadImage("flames.png");
- flame2 = loadImage("flamesf.png");
- flame3 = loadImage("flamesb.png");
- flame4 = loadImage("flamesc.png");
- flame5 = loadImage("flamesd.png");
- flame6 = loadImage("flamese.png");
+ //flame1 = loadImage("flames.png");
+ //flame2 = loadImage("flamesf.png");
+ //flame3 = loadImage("flamesb.png");
+ //flame4 = loadImage("flamesc.png");
+ //flame5 = loadImage("flamesd.png");
+ //flame6 = loadImage("flamese.png");
  
  
   noLoop();
@@ -98,6 +98,7 @@ void draw()
   textAlign (CENTER);
   text(a,750, 350, 150, 320);
   
+
  //Prophecy font control   
     textFont(font2,40);
      textAlign(CENTER,CENTER);
@@ -124,70 +125,4 @@ void mouseClicked()
 {
   mode =! mode;
   redraw();
-}
-
-void loop()
-{ 
-  frameRate(4);
- loop();
-//first candle 
-
-    int image = int(random(0,6));
-     imageMode(CENTER);
-
-       fill(255,188,0,88);
-if (image ==0){
-  image (flame1,width/5*4+48,135,30,65);
-   ellipse(width/5*4+45,135, 200, 200);
-}
-if (image ==1){
-image (flame2, width/5*4+50,135,30,65);
-   ellipse(width/5*4+55,135, 180, 180);
-}
-if (image ==2){
-image (flame3, width/5*4+50,135,30,65);
-   ellipse(width/5*4+45,145, 210, 210);
-}
-if (image ==3){
-image (flame4, width/5*4+50,135,30,65);
-   ellipse(width/5*4+45,135, 200, 200);
-}
-if (image ==4){
-image (flame5, width/5*4+48,135,30,65);
-   ellipse(width/5*4+55,135, 180, 200);
-}
-if (image ==5){
-image (flame6, width/5*4+50,135,30,65);
-   ellipse(width/5*4+45,145, 200, 210);
-}
-   
- //second candle
-   int image2 = int(random(0,6));
-     imageMode(CENTER);
-     //image(img2, width/7, 475, 132,247.5);
-     fill(255,188,0,88);
-if (image2 ==0){
-  image (flame1,width/7-3,375,45,97.5);
-          ellipse(width/7,385, 230, 240);
-}
-if (image2 ==1){
-image (flame2, width/7,375,45,97.5);
-       ellipse(width/7,375, 240, 220);
-}
-if (image2 ==2){
-image (flame3, width/7,375,45,97.5);
-     ellipse(width/7,367, 230, 230);
-}
-if (image2 ==3){
-image (flame4, width/7+5,375,45,97.5);
-   ellipse(width/7+10,375, 240, 250);
-}
-if (image2 ==4){
-image (flame5, width/7-3,375,45,97.5);
-   ellipse(width/7,385, 250, 250);
-}
-if (image2 ==5){
-image (flame6, width/7,375,45,97.5);
-   ellipse(width/7-10,367, 260, 250);
-}
 }
